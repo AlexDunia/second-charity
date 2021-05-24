@@ -1,0 +1,455 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing:border-box;
+	overflow: :hidden;
+}
+
+a{
+	text-decoration:none;
+	color:#555;
+}
+
+p{
+	color:#555;
+}
+
+ul{
+	list-style-type:none;
+}
+
+.scroll{
+	scroll-behavior: smooth;
+	overflow-y:scroll;
+}
+
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+li{
+	list-style:none;
+}
+
+.newdiv li{
+	display:inline;
+}
+
+.readmore{
+	color:#66198b;
+}
+
+.readmore:hover{
+	color:#66198b;
+	font-weight:700;
+}
+
+.readmorewhite{
+	color:white;
+}
+
+.margin{
+	margin-top:60px;
+}
+
+.container{
+	margin:auto;
+	max-width:80%;
+}
+
+/* THIS IS THE NAV BAR. BOTH THE MAIN AND THE RESPONSIVE */
+
+
+.scroll{
+	background-color:#66198b;
+}
+.nav li{
+	display:inline;
+	padding:0 70px;
+	color:#66198b;
+}
+
+.nav li a {
+	color:white;
+}
+
+.nav ul li a:hover{
+	font-weight:700;
+}
+
+.navbarr{
+	display:flex;
+	align-items:center;
+	justify-content: space-between;
+}
+
+
+
+.menuicon{
+    display:none;
+	width:20px;
+	height:20px;
+}
+
+.menuiconn2{
+	display:none;
+	width:20px;
+	height:20px;
+}
+
+.menuicon2{
+	display:none;
+	width:20px;
+	height:20px;
+}
+
+.nav2{
+	display:none;
+}
+
+/* WHO WE ARE */
+
+.smallcontainer{
+	line-height:4;
+	margin:auto;
+	max-width:80%;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+.who{
+	display:flex;
+	padding:20px;
+	justify-content:space-around;
+}
+
+.whoweareline{
+	background-color:#66198b;
+	width:90px;
+	height:5px;
+	border-radius:30px;
+	margin:left;
+    margin-bottom:25px;
+}
+
+.whoweare{
+	flex-basis:40%;
+	line-height:2.5em;
+}
+
+.whoweare h1{
+	margin-bottom:25px;
+}
+
+.whoweare p{
+	margin-bottom:20px;
+}
+
+.whoweare img{
+	width:100%;
+}
+
+.old{
+	flex-basis:35%;
+}
+
+.old img{
+	width:70%;
+}
+
+/* FORM FLOAT*/
+
+.fadeform{
+	flex-basis:60px;
+}
+
+.name{
+	width: 800px;
+
+	padding:15px;
+	margin-bottom:45px;
+}
+
+.button{
+	color:white;
+	background-color:#66198b;
+	padding:15px;
+	border:0;
+	width:100px;
+}
+
+
+/* PURPLE SHOWCASE */
+
+.clr{
+	clear:both;
+}
+
+.purpleshowcase{
+	background-color: #66198b;
+	padding:60px;
+	margin-top:60px;
+	margin-bottom:60px;
+
+}
+
+.purpletext{
+	text-align:center;
+	color:white;
+}
+
+.purpletext h2{
+	margin-bottom:35px;
+	margin-top:20px;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+}
+
+.purpletext h1{
+	font-weight: 600;
+	letter-spacing: 0.1em;
+}
+
+.purpletext p{
+	color:white;
+	letter-spacing: 0.3em;
+	margin-bottom:35px;
+	margin-top:20px;
+}
+
+.purplebtn{
+	padding: 10px 45px;
+	background-color: white;
+	color: #66198b;
+	border-radius:30px;
+	letter-spacing: 0.2em;
+
+}
+
+.purplebtn:hover {
+	padding: 7px 40px;
+	background-color: #66198b;
+	color: white;
+	border: 2px solid white;
+	border-radius:30px;
+	letter-spacing: 0.2em;
+}
+
+/* EVERTHING FOOTER */
+
+.footerbg{
+	background-color:black;
+	color:white;
+	padding:60px;
+}
+
+.footerbg h1{
+	font-size:20px;
+
+}
+
+.newsletter{
+	display:flex;
+	justify-content:space-between;
+}
+
+.footercol1{
+	flex:1;
+}
+
+.footerbg hr {
+	border:none;
+	background:#b5b5b5;
+	height:0.2px;
+	margin: 20px 0;
+}
+
+.footerbg p {
+	margin:auto;
+	
+}
+
+.footerbtn{
+	padding: 3px 10px;
+	background-color:  #66198b;
+	color:white;
+
+}
+
+.newsletter2{
+	text-align:center;
+	margin:auto;
+	display:flex;
+	justify-content:space-around;
+}
+
+.newsletter2 h4{
+	margin-bottom:12px;
+}
+
+.newsletter2 p{
+	margin-bottom:12px;
+}
+
+.copyright{
+	text-align:center;
+}
+
+/*MEDIA QUERY */
+
+@media (max-width: 800px){
+
+	.background{
+	background-image: url(../images/phonedele.jpeg);
+	background-size:cover;
+	padding:10px 10px;
+	}
+
+
+
+
+	.empower{
+		font-weight:normal;
+	font-size:47px;
+	line-height:1.5em;
+	
+    }
+
+    /*THIS IS THE NAVIGATION DISPLAY */
+
+    .nav{
+    	display:none;
+    }
+
+    .nav2{
+    	display:block;
+    	visibility:hidden;
+    }
+
+
+    .menuiconn2{
+    	visibility:hidden;
+    }
+
+    .nav2 ul{
+		position:absolute;
+		top:50px;
+		left:0;
+		width:100%;
+		padding:20px;
+		font-size:19px;
+		text-align:left;
+		background:white;
+	}
+
+    .nav2 ul li a{
+    	color:black;
+		border-bottom:1px solid #66198b;
+		padding:15px;
+		display:block;
+    }
+
+
+    .menuicon2{
+    	margin-left:210px;
+    	display:block;
+    }
+
+     .menuiconn2{
+    	display:block;
+    }
+
+	.who{
+		display:block;
+	}
+
+	.whoweare{
+		margin-bottom:30px;
+	}
+
+	.name{
+	width: 100%;
+	padding:15px;
+	margin-bottom:45px;
+    }
+
+    .whatwedo{
+	padding:60px;
+	text-align:left;
+    }
+
+.showcase{
+	display:block;
+}
+
+
+/*footer*/
+
+
+.footerbg{
+	margin:auto;
+}
+
+.subscribe{
+	text-align:left;
+
+}
+
+.subscribe h1{
+	margin: 0;
+}
+
+.form{
+	margin:left;
+}
+
+.newsletter h1{
+	align-items:left;
+	display:block;
+}
+
+.newsletter2 h4{
+	margin-bottom: 25px;
+}
+
+.newsletter p{
+	display:block;
+}
+
+.newsletter2{
+	display:block;
+	text-align:left;
+}
+
+.newsletter2 p{
+	display:block;
+	text-align:left;
+	margin-bottom:25px;
+}
+
+
+ .menuicon2{
+    	margin-left:170px;
+    	display:block;
+    }
+
+.purplebtn {
+    padding: 10px 20px;
+    background-color: white;
+    color: #66198b;
+    border-radius: 30px;
+    letter-spacing: 0.2em;
+}
+
+
+.newsletter {
+    display:none;
+}
+
+.footecol1 img{
+display:none
+}
+
+}
+

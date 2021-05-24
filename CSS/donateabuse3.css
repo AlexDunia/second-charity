@@ -1,0 +1,364 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing:border-box;
+	overflow: :hidden;
+}
+
+a{
+	text-decoration:none;
+	color:#555;
+}
+
+p{
+	color:#555;
+}
+
+ul{
+	list-style-type:none;
+}
+
+.scroll{
+	scroll-behavior: smooth;
+	overflow-y:scroll;
+}
+
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+li{
+	list-style:none;
+}
+
+.newdiv li{
+	display:inline;
+}
+
+.readmore{
+	color:#66198b;
+}
+
+.readmore:hover{
+	color:#66198b;
+	font-weight:700;
+}
+
+.readmorewhite{
+	color:white;
+}
+
+.margin{
+	margin-top:60px;
+}
+
+.container{
+	margin:auto;
+	max-width:80%;
+}
+
+/* THIS IS THE NAV BAR. BOTH THE MAIN AND THE RESPONSIVE */
+
+
+.scroll{
+	background-color:#66198b;
+}
+.nav li{
+	display:inline;
+	padding:0 70px;
+	color:#66198b;
+}
+
+.nav li a {
+	color:white;
+}
+
+.nav ul li a:hover{
+	font-weight:700;
+}
+
+.navbarr{
+	display:flex;
+	align-items:center;
+	justify-content: space-between;
+}
+
+
+
+.menuicon{
+    display:none;
+	width:20px;
+	height:20px;
+}
+
+.menuiconn2{
+	display:none;
+	width:20px;
+	height:20px;
+}
+
+.menuicon2{
+	display:none;
+	width:20px;
+	height:20px;
+}
+
+.nav2{
+	display:none;
+}
+
+
+/* THE FLEX */
+
+.supportandflex{
+	display:flex;
+}
+
+.support{
+	flex-basis:50%;
+	margin-right:30px;
+}
+
+.support h2{
+	margin:50px 0;
+}
+
+.dflex{
+	flex-basis:80%;
+}
+
+.donateflex{
+	display:flex;
+	flex-basis:90%;
+	margin-top:140px;
+}
+
+.dflex img{
+	width:90%;
+}
+
+#marginn{
+	margin-bottom:15px;
+}
+
+.optionn{
+	padding:5px 8px;
+}
+
+.purplebtn{
+	padding: 7px 10px;
+	background-color: #66198b;
+	color:white;
+	letter-spacing: 0.1em;
+	border:none;
+	margin-left:20px;
+}
+
+.purplebtn:hover {
+	padding: 7px 10px;
+	background-color:white;
+	color: #66198b;
+	border: 2px solid #66198b;
+	letter-spacing: 0.1em;
+}
+
+/* EVERTHING FOOTER */
+
+.footerbg{
+	background-color:black;
+	color:white;
+	padding:60px;
+}
+
+.footerbg h1{
+	font-size:20px;
+
+}
+
+.newsletter{
+	display:flex;
+	justify-content:space-between;
+}
+
+.footercol1{
+	flex:1;
+}
+
+.footerbg hr {
+	border:none;
+	background:#b5b5b5;
+	height:0.2px;
+	margin: 20px 0;
+}
+
+.footerbg p {
+	margin:auto;
+	
+}
+
+.footerbtn{
+	padding: 3px 10px;
+	background-color:  #66198b;
+	color:white;
+
+}
+
+.newsletter2{
+	text-align:center;
+	margin:auto;
+	display:flex;
+	justify-content:space-around;
+}
+
+.newsletter2 h4{
+	margin-bottom:12px;
+}
+
+.newsletter2 p{
+	margin-bottom:12px;
+}
+
+.copyright{
+	text-align:center;
+}
+
+/*MEDIA QUERY */
+
+@media (max-width: 800px){
+
+    /*THIS IS THE NAVIGATION DISPLAY */
+
+    .nav{
+    	display:none;
+    }
+
+    .nav2{
+    	display:block;
+    	visibility:hidden;
+    }
+
+
+    .menuiconn2{
+    	visibility:hidden;
+    }
+
+    .nav2 ul{
+		position:absolute;
+		top:50px;
+		left:0;
+		width:100%;
+		padding:20px;
+		font-size:19px;
+		text-align:left;
+		background:white;
+	}
+
+    .nav2 ul li a{
+    	color:black;
+		border-bottom:1px solid #66198b;
+		padding:15px;
+		display:block;
+    }
+
+
+    .menuicon2{
+    	margin-left:210px;
+    	display:block;
+    }
+
+     .menuiconn2{
+    	display:block;
+    }
+
+	.who{
+		display:block;
+	}
+
+	.whoweare{
+		margin-bottom:30px;
+	}
+
+	.name{
+	width: 100%;
+	padding:15px;
+	margin-bottom:45px;
+    }
+
+    /* NEW STUFF */
+
+    .supportandflex{
+    	display:block;
+    }
+
+    .donateflex{
+    	display:block;
+    	margin-top:20px;
+    	margin-bottom:27px;
+    }
+
+/*footer*/
+
+
+.footerbg{
+	margin:auto;
+}
+
+.subscribe{
+	text-align:left;
+
+}
+
+.subscribe h1{
+	margin: 0;
+}
+
+.form{
+	margin:left;
+}
+
+.newsletter h1{
+	align-items:left;
+	display:block;
+}
+
+.newsletter p{
+	
+	display:block;
+}
+
+.newsletter2{
+	display:block;
+	text-align:left;
+}
+
+.newsletter h4{
+	margin-bottom:25px;
+}
+
+.newsletter2 p{
+	display:block;
+	text-align:left;
+	margin-bottom:25px;
+}
+
+ .menuicon2{
+    	margin-left:170px;
+    	display:block;
+    }
+
+.newsletter {
+    display:none;
+}
+
+.footecol1 img{
+display:none
+}
+
+.footerbg {
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+
+}
